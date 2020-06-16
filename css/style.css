@@ -1,0 +1,270 @@
+body, *, *:before, *:after {
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html, body{
+    font-family: 'Playfair Display', serif;
+    color: #4e4e4e;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 1em;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+a{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:active{
+    color: inherit;
+    background: inherit;
+    text-decoration: none;
+}
+
+.fixed-width {
+    width: 940px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+/*========================
+Header
+==========================*/
+
+.page-header {
+    border-top: 5px solid #dadada;
+}
+
+.page-header > div {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+    .page-header .identity{
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: 'Teko', sans-serif;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .page-header nav {
+        float: right;
+        text-transform: uppercase;
+        font-family: 'Teko', sans-serif;
+    }
+
+    .page-header nav li {
+        color: #7e7e7e;
+        display: block;
+        float: left;
+        margin-right: 3rem;
+        padding-top: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .page-header nav .changed-background {
+        background: black;
+        color: lightgoldenrodyellow;
+    }
+
+    .page-header nav li a .changed-background {
+        color: sandybrown;
+    }
+
+    .page-header nav li:last-child {
+        margin: 0;
+    }
+
+    .page-header div nav li em {
+        color: #3e3e3e;
+        font-weight: bold;
+        display: block;
+        
+    }
+
+/*=======================
+Main Visual
+=========================*/
+.main-visual:before {
+    content: " ";
+    display: block;
+    height: 36px;
+    background: url(../images/pattern.png) left top repeat-x;
+}
+
+    .main-visual figure:first-child {
+        margin-bottom: 3rem;
+    }
+
+    .main-visual img {
+        display: block;
+        width: 940px;
+    }
+
+    .main-visual figcaption {
+        padding: 0.5em 1em;
+    }
+
+    .main-visual figcaption > strong {
+        font-size: 1.4rem;
+    }
+
+
+/*=======================
+Articles
+=========================*/
+.main-content {
+    margin-bottom: 3rem;
+}
+
+  
+    .main-content .articles {
+        float: left;
+         width: 30%;
+        margin-right: 5%;
+    }
+
+    .main-content .articles:last-child {
+        margin: 0;
+    }
+
+    .main-content .articles header {
+        font-size: 1.4rem;
+    }
+
+/*=======================
+Gallery
+=========================*/
+.gallery:before {
+    background: url(../images/pattern.png) left top repeat-x;
+    height: 36px;
+    display: block;
+    content: " ";
+}
+
+    .gallery header h2 {
+        padding: 1rem 0 0 1rem;
+    }
+
+    .gallery header h2 i {
+        margin-right: 1em;
+    }
+
+    .gallery figure:first-of-type {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .gallery figure:first-of-type > img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .gallery figure {
+        width: 310px;
+        margin-right: 5px;
+        float: left;
+    }
+
+        .gallery figure .is-visible {
+            width: 310px;
+            height: 206px;
+            display: block;
+        }
+
+        .gallery figure img {
+            display: none;
+        }
+
+        .gallery figure figcaption em {
+            font-size: 1.1rem;
+            display: block;
+        }
+
+    .gallery figure:last-of-type {
+        margin-right: 0;
+        position: relative;
+    }
+    
+    .gallery figure:last-of-type button:active,
+    .gallery figure:last-of-type button:visited,
+    .gallery figure:last-of-type button:focus,
+    .gallery figure:last-of-type button {
+        border: none;
+        display: block;
+        outline: none;
+        position: absolute;
+        width: 50px;
+    }
+
+    .gallery figure:last-of-type button {  
+        top: 100px;
+        left: 310px;
+    }
+
+    
+    .gallery figure:last-of-type button:last-of-type {
+        top: 100px;
+        left: -680px;
+    }
+
+    .gallery figure button i {
+        pointer-events: none;
+    }
+
+
+/*=======================
+Footer
+=========================*/
+
+.page-footer:before {
+    content: " ";
+    display: block;
+    height: 36px;
+    background: url(../images/pattern.png) left top repeat-x;
+}
+
+    .page-footer .page-footer-content {
+        padding-top: 1em;
+        font-family: Teco, sans-serif;
+        color: #6e6e6e;
+    }
+
+    .page-footer .page-footer-content .credits {
+        display: block;
+        float: right;
+    }
+
+    .page-footer .page-footer-content .credits em {
+       font-weight: bold;
+    }
